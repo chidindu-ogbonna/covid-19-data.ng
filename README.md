@@ -1,4 +1,4 @@
-# Coronavirus (Covid-19) Data in the Nigeria
+# Coronavirus (Covid-19) Data in Nigeria
 
 The NCDC is doing a really good job collecting data and [reporting it](https://ncdc.gov.ng/diseases/sitreps/?cat=14&name=An%20update%20of%20COVID-19%20outbreak%20in%20Nigeria) (and also sending text messages), but it's not in a format useful for analysis. It is released daily in a pdf file (some days are missing as well). To use this data for anything you would need to do some **hocus pocus**.
 
