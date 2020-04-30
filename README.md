@@ -14,7 +14,7 @@ However, this is the first data on coronavirus in Nigeria curated at a geographi
 
 I have compiled this time series at a state level (starting from the 29th February 2020), meaning every state is represented in these files, including those without any known coronavirus case (Cross River & Kogi).
 
-Below is a screenshot of the confirmed csv files
+Below is a screenshot of the confirmed csv files, from the 10th of April up to the 29th
 
 ![confirmed cases](https://github.com/6ones/covid-19-data.ng/blob/master/images/screenshot%20confirmed%20cases.png)
 
