@@ -1,4 +1,5 @@
 # Coronavirus (Covid-19) Data in Nigeria
+[ [Confirmed cases](https://github.com/6ones/covid-19-data.ng/blob/master/confirmed.csv) ([raw CSV](https://raw.githubusercontent.com/6ones/covid-19-data.ng/master/confirmed.csv)) | [Discharged cases](https://github.com/6ones/covid-19-data.ng/blob/master/discharged.csv) ([raw CSV](https://raw.githubusercontent.com/6ones/covid-19-data.ng/master/discharged.csv)) | [Deaths](https://github.com/6ones/covid-19-data.ng/blob/master/deaths.csv) ([raw CSV](https://raw.githubusercontent.com/6ones/covid-19-data.ng/master/deaths.csv)) ]
 
 The NCDC is doing a really good job collecting data and [reporting it](https://ncdc.gov.ng/diseases/sitreps/?cat=14&name=An%20update%20of%20COVID-19%20outbreak%20in%20Nigeria) (and also sending text messages), but it's not in a format useful for analysis. It is released daily in a pdf file (some days are missing as well). To use this data for anything you would need to do some **hocus pocus**.
 
@@ -28,6 +29,13 @@ Each row of data reports cumulative counts based on the NCDC up to the moment an
 
 ## Reading Data
 
+To get the data, you either clone the repository using git:
+
+`git clone https://github.com/6ones/covid-19-data.ng.git`
+
+Or download the raw files as indicated above.
+
+To read the data into a dataframe, you can do the following:
 ```python
 import pandas as pd
 
