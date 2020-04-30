@@ -1,6 +1,6 @@
 # Coronavirus (Covid-19) Data in the Nigeria
 
-The NCDC is doing a really good job collecting data and reporting it [here](https://ncdc.gov.ng/diseases/sitreps/?cat=14&name=An%20update%20of%20COVID-19%20outbreak%20in%20Nigeria) (and also sending text messages), but it's not in a format useful for analysis. It is released daily in a pdf file (some days are missing as well). To use this data for anything you would need to do some **hocus pocus**.
+The NCDC is doing a really good job collecting data and [reporting it](https://ncdc.gov.ng/diseases/sitreps/?cat=14&name=An%20update%20of%20COVID-19%20outbreak%20in%20Nigeria) (and also sending text messages), but it's not in a format useful for analysis. It is released daily in a pdf file (some days are missing as well). To use this data for anything you would need to do some **hocus pocus**.
 
 Luckily, I am doing that for you.
 
@@ -10,12 +10,13 @@ The first confirmed case of the coronavirus pandemic was announced in Nigeria on
 
 This is not the first curation of the data on the coronavirus pandemic in Nigeria, you can see something similar [here](https://github.com/CSSEGISandData/COVID-19), provided by the John Hopkins University.
 
-However this is the first data on coronavirus in Nigeria curated at a geographical level: **States**.
+However, this is the first data on coronavirus in Nigeria curated at a geographical level: **States**.
 
 I have compiled this time series at a state level (starting from the 29th February 2020), meaning every state is represented in these files, including those without any known coronavirus case (Cross River & Kogi).
 
 Below is a screenshot of the confirmed csv files
-![Confirmed Cases]()
+
+![confirmed cases](https://github.com/6ones/covid-19-data.ng/blob/master/images/screenshot%20confirmed%20cases.png)
 
 The data can be found in three files
 
