@@ -1,4 +1,5 @@
 # Coronavirus (Covid-19) Data in Nigeria
+
 [ [Confirmed cases](https://github.com/6ones/covid-19-data.ng/blob/master/confirmed.csv) ([raw CSV](https://raw.githubusercontent.com/6ones/covid-19-data.ng/master/confirmed.csv)) | [Discharged cases](https://github.com/6ones/covid-19-data.ng/blob/master/discharged.csv) ([raw CSV](https://raw.githubusercontent.com/6ones/covid-19-data.ng/master/discharged.csv)) | [Deaths](https://github.com/6ones/covid-19-data.ng/blob/master/deaths.csv) ([raw CSV](https://raw.githubusercontent.com/6ones/covid-19-data.ng/master/deaths.csv)) ]
 
 The NCDC is doing a really good job collecting data and [reporting it](https://ncdc.gov.ng/diseases/sitreps/?cat=14&name=An%20update%20of%20COVID-19%20outbreak%20in%20Nigeria) (and also sending text messages), but it's not in a format useful for analysis. It is released daily in a pdf file (some days are missing as well). To use this data for anything you would need to do some **hocus pocus**.
@@ -27,7 +28,7 @@ The data can be found in three files
 
 Each row of data reports cumulative counts based on the NCDC up to the moment an update is published. I do my best to revise earlier entries in the data when I receive new information.
 
-## Reading Data
+## Getting Data
 
 To get the data, you either clone the repository using git:
 
@@ -36,13 +37,16 @@ To get the data, you either clone the repository using git:
 Or download the raw files as indicated above.
 
 To read the data into a dataframe, you can do the following:
+
 ```python
 import pandas as pd
 
-confirmed = pd.read_csv('confirmed.csv', index_col='date')
-discharged = pd.read_csv('discharged.csv', index_col='date')
-deaths = pd.read_csv('deaths.csv', index_col='date')
+confirmed = pd.read_csv('confirmed.csv', parse_dates=['date'], index_col='date')
+discharged = pd.read_csv('discharged.csv', parse_dates=['date'], index_col='date')
+deaths = pd.read_csv('deaths.csv', parse_dates=['date'], index_col='date')
 ```
+
+> N.B I have included the [raw data](https://github.com/6ones/covid-19-data.ng/blob/master/raw_data/raw_data.csv) collected, and the [notebook](https://github.com/6ones/covid-19-data.ng/blob/master/raw_data/process%20raw%20data.ipynb) used in processing it.
 
 ## Contact Me
 
